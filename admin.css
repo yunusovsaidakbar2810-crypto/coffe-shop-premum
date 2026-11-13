@@ -53,13 +53,11 @@ body {
   transform: scale(0.94);
 }
 
-/* CONTAINER */
 .container {
   width: 90%;
   margin: 40px auto;
 }
 
-/* STATISTICS */
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -92,7 +90,6 @@ body {
   color: #71351f;
 }
 
-/* ADD PRODUCT */
 .add-section {
   background: white;
   padding: 35px;
@@ -172,7 +169,6 @@ body {
   display: none;
 }
 
-/* PRODUCTS SECTION */
 .products-section {
   background: white;
   padding: 35px;
@@ -207,7 +203,6 @@ body {
   box-shadow: 0 0 0 3px #71351f15;
 }
 
-/* PRODUCT CARDS */
 .products {
   display: grid;
   grid-template-columns: repeat(3, 300px);
