@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Admin</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/orqa fon rasm.png"
+        class="admin-logo"
+        alt="Latte Lane"
+      />
+
+      <h2>ADMIN PANEL</h2>
+
+      <a href="index.html">Bosh sahifaga qaytish</a>
+    </header>
+
+    <main class="container">
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Jami mahsulotlar</h3>
+          <h1 id="totalProducts">0</h1>
+        </div>
+
+        <div class="stat-card">
+          <h3>Coffee</h3>
+          <h1 id="totalCoffee">0</h1>
+        </div>
+
+        <div class="stat-card">
+          <h3>Dessert</h3>
+          <h1 id="totalDessert">0</h1>
+        </div>
+      </section>
+
+      <section class="add-section">
+        <h2 id="formTitle">Mahsulot qo'shish</h2>
+
+        <form id="productForm">
+          <input type="text" id="name" placeholder="Mahsulot nomi" required />
+
+          <input
+            type="text"
+            id="price"
+            placeholder="Masalan: 25$ yoki 20 000 so'm"
+          />
+
+          <select id="category" required>
+            <option value="Coffee">Coffee</option>
+            <option value="Dessert">Dessert</option>
+          </select>
+
+          <input
+            type="text"
+            id="image"
+            placeholder="Rasm URL manzili"
+            required
+          />
+
+          <textarea
+            id="description"
+            placeholder="Mahsulot haqida ma'lumot"
+          ></textarea>
+
+          <button type="submit" id="submitBtn">Mahsulot qo'shish</button>
+
+          <button type="button" id="cancelEdit" class="cancel-btn">
+            Bekor qilish
+          </button>
+        </form>
+      </section>
+
+      <section class="products-section">
+        <div class="products-top">
+          <h2>Barcha mahsulotlar</h2>
+          <input type="text" id="search" placeholder="Mahsulot qidirish..." />
+        </div>
+
+        <div id="products" class="products"></div>
+      </section>
+    </main>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>
